@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+stock_env/
+venv/
+ENV/
+env/
+*.egg-info/
+dist/
+build/
+*.pkl
+
+# VSCode
+.vscode/
+~/.vscode/
+
+# Logs
+*.log
+log/
+
+# Data files
+*.csv
+*.txt
+*.yaml
+*.json
+data/
+bak/
+
+# Zip files
+*.zip
+
+# OpenClaw workspace files
+.openclaw/
+*.md
+corgi-clock/
+resume.md
