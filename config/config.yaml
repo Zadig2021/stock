@@ -1,0 +1,87 @@
+# 股票监控配置文件
+monitor_settings:
+  # 全局设置
+  global:
+    default_interval: 10  # 默认监控间隔(秒)
+    log_dir: "log"
+  
+  # 监控股票列表
+  stocks:
+    "603986":
+      name: "兆易创新"
+      enabled: true
+      interval: 10  # 监控间隔(秒)
+      price_alerts:
+        upper_limit: 56.00    # 价格上限警报
+        lower_limit: 51.00    # 价格下限警报
+      change_speed_alerts:
+        max_change_per_minute: 2.0  # 每分钟最大涨跌幅(%)
+        volume_spike_ratio: 3.0     # 成交量突增倍数
+        volume_time_ratio_alert: 3.0  # 成交量时间比例警报阈值
+      log_interval: 300
+
+    
+    "601187":
+      name: "厦门银行"
+      enabled: true
+      interval: 10
+      price_alerts:
+        upper_limit: 8.00
+        lower_limit: 7.00
+      change_speed_alerts:
+        max_change_per_minute: 2.0
+        volume_spike_ratio: 3.0
+        volume_time_ratio_alert: 3.0  # 成交量时间比例警报阈值
+      log_interval: 300
+
+    "601138":
+      name: "工业富联"
+      enabled: true
+      interval: 10
+      price_alerts:
+        upper_limit: 65.00
+        lower_limit: 55.00
+      change_speed_alerts:
+        max_change_per_minute: 2.0
+        volume_spike_ratio: 3.0
+        volume_time_ratio_alert: 3.0  # 成交量时间比例警报阈值
+      log_interval: 300
+
+    "601899":
+      name: "紫金矿业"
+      enabled: true
+      interval: 10
+      price_alerts:
+        upper_limit: 32.00
+        lower_limit: 29.00
+      change_speed_alerts:
+        max_change_per_minute: 2.0
+        volume_spike_ratio: 3.0
+        volume_time_ratio_alert: 3.0  # 成交量时间比例警报阈值
+      log_interval: 300
+
+    "300115":
+      name: "长盈精密"
+      enabled: true
+      interval: 10
+      price_alerts:
+        upper_limit: 44.00
+        lower_limit: 41.00
+      change_speed_alerts:
+        max_change_per_minute: 2.0
+        volume_spike_ratio: 3.0
+        volume_time_ratio_alert: 3.0  # 成交量时间比例警报阈值
+      log_interval: 300
+
+    "688795":
+      name: "摩尔线程"
+      enabled: true
+      interval: 10
+      price_alerts:
+        upper_limit: 700.00
+        lower_limit: 500.00
+      change_speed_alerts:
+        max_change_per_minute: 2.0
+        volume_spike_ratio: 3.0
+        volume_time_ratio_alert: 3.0  # 成交量时间比例警报阈值
+      log_interval: 300

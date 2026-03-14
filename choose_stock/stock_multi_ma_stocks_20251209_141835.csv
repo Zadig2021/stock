@@ -1,0 +1,3 @@
+﻿symbol,name,current_price,change_percent,volume,amount,ma5,ma20,volume_ratio,rsi,is_starting,is_rising,has_increasing_volume,is_multi_ma,score
+000656,*ST金科,1.48,-1.33%,65346742,96888329.16,1.498,1.4715,1.2553106197331887,43.47826086956522,False,True,True,True,3
+000703,恒逸石化,8.36,0.12%,43355455,367668590.31,8.326,7.5009999999999994,0.6532524386371041,67.3469387755102,False,True,False,True,2

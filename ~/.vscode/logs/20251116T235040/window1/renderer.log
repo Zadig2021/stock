@@ -1,0 +1,18 @@
+2025-11-16 23:50:49.531 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-11-16 23:50:50.988 [info] Started local extension host with pid 271251.
+2025-11-16 23:50:51.510 [info] Started initializing default profile extensions in extensions installation folder. file:///root/.vscode/extensions
+2025-11-16 23:50:53.418 [info] Completed initializing default profile extensions in extensions installation folder. file:///root/.vscode/extensions
+2025-11-16 23:51:02.566 [info] MCP Registry configured: https://api.mcp.github.com
+2025-11-16 23:51:03.595 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-11-16 23:51:11.011 [info] [perf] Render performance baseline is 293ms
+2025-11-16 23:51:16.058 [error] Cancelled: Canceled: Canceled
+    at aQe.L (vscode-file://vscode-app/snap/code/212/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1353:35089)
+    at async aQe.K (vscode-file://vscode-app/snap/code/212/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1353:33813)
+    at async aQe.C (vscode-file://vscode-app/snap/code/212/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1353:24533)
+    at async vscode-file://vscode-app/snap/code/212/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1353:23898
+    at async Promise.all (index 0)
+    at async aQe.B (vscode-file://vscode-app/snap/code/212/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1353:23852)
+    at async aQe.getExtensions (vscode-file://vscode-app/snap/code/212/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:1353:22509)
+    at async Vut.getExtensions (vscode-file://vscode-app/snap/code/212/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2493:15152)
+    at async wQs.Rc (vscode-file://vscode-app/snap/code/212/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2489:17026)
+    at async wQs.$c (vscode-file://vscode-app/snap/code/212/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:2489:19670)

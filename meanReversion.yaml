@@ -1,0 +1,33 @@
+risk_control:
+  max_daily_loss: 0.03
+  max_single_loss: 0.008
+  position_control: true
+  stop_loss_rate: 0.015
+  take_profit_rate: 0.025
+strategies:
+  Breakout:
+    breakout_threshold: 0.008
+    confirmation_bars: 1
+    period: 15
+  MeanReversion:
+    deviation_threshold: 0.025
+    lookback_period: 15
+    ma_period: 3
+    volume_confirmation: true
+  TrendFollowing:
+    long_period: 15
+    momentum_period: 5
+    short_period: 3
+    trend_threshold: 0.008
+strategy:
+  max_holding_time: 240
+  min_profit_threshold: 0.008
+  name: MeanReversion
+  price_change_threshold: 0.015
+  volume_threshold: 1.8
+trading:
+  capital: 50000
+  commission_rate: 0.00025
+  max_position_ratio: 0.7
+  min_trade_amount: 5000
+  stamp_tax_rate: 0.001

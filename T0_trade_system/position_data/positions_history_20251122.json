@@ -1,0 +1,123 @@
+{
+  "positions": [
+    {
+      "stock_code": "600686.SH",
+      "stock_name": "金龙汽车",
+      "quantity": 900,
+      "entry_price": 15.005,
+      "current_price": 14.09,
+      "signal_type": "BUY",
+      "entry_time": "2025-11-22T15:37:29.806441",
+      "stop_loss_price": null,
+      "market_value": 12681.0,
+      "pnl": -823.5000000000008,
+      "pnl_rate": -0.060979673442185994,
+      "holding_time": 471.57503275
+    },
+    {
+      "stock_code": "600938.SH",
+      "stock_name": "中国海油",
+      "quantity": 200,
+      "entry_price": 28.491,
+      "current_price": 28.91,
+      "signal_type": "BUY",
+      "entry_time": "2025-11-22T15:37:29.806502",
+      "stop_loss_price": null,
+      "market_value": 5782.0,
+      "pnl": 83.8000000000001,
+      "pnl_rate": 0.014706398511810765,
+      "holding_time": 471.57503185
+    },
+    {
+      "stock_code": "601012.SH",
+      "stock_name": "隆基绿能",
+      "quantity": 4300,
+      "entry_price": 21.18,
+      "current_price": 19.15,
+      "signal_type": "BUY",
+      "entry_time": "2025-11-22T15:37:29.806512",
+      "stop_loss_price": null,
+      "market_value": 82345.0,
+      "pnl": -8729.000000000005,
+      "pnl_rate": -0.09584513692162423,
+      "holding_time": 471.57503175
+    },
+    {
+      "stock_code": "002451.SZ",
+      "stock_name": "摩恩电气",
+      "quantity": 100,
+      "entry_price": 13.902,
+      "current_price": 10.48,
+      "signal_type": "BUY",
+      "entry_time": "2025-11-22T15:37:29.806517",
+      "stop_loss_price": null,
+      "market_value": 1048.0,
+      "pnl": -342.1999999999999,
+      "pnl_rate": -0.24615163285858144,
+      "holding_time": 471.5750317166667
+    },
+    {
+      "stock_code": "002466.SZ",
+      "stock_name": "天齐锂业",
+      "quantity": 400,
+      "entry_price": 57.753,
+      "current_price": 56.6,
+      "signal_type": "BUY",
+      "entry_time": "2025-11-22T15:37:29.806524",
+      "stop_loss_price": null,
+      "market_value": 22640.0,
+      "pnl": -461.1999999999995,
+      "pnl_rate": -0.01996433085727146,
+      "holding_time": 471.57503164999997
+    },
+    {
+      "stock_code": "300015.SZ",
+      "stock_name": "爱尔眼科",
+      "quantity": 2000,
+      "entry_price": 12.293,
+      "current_price": 11.69,
+      "signal_type": "BUY",
+      "entry_time": "2025-11-22T15:37:29.806529",
+      "stop_loss_price": null,
+      "market_value": 23380.0,
+      "pnl": -1205.9999999999995,
+      "pnl_rate": -0.049052306190514906,
+      "holding_time": 471.5750316333333
+    },
+    {
+      "stock_code": "300454.SZ",
+      "stock_name": "深信服",
+      "quantity": 300,
+      "entry_price": 117.713,
+      "current_price": 114.68,
+      "signal_type": "BUY",
+      "entry_time": "2025-11-22T15:37:29.806533",
+      "stop_loss_price": null,
+      "market_value": 34404.0,
+      "pnl": -909.8999999999961,
+      "pnl_rate": -0.025766058124421152,
+      "holding_time": 471.57503161666665
+    },
+    {
+      "stock_code": "300676.SZ",
+      "stock_name": "华大基因",
+      "quantity": 400,
+      "entry_price": 48.407,
+      "current_price": 45.9,
+      "signal_type": "BUY",
+      "entry_time": "2025-11-22T15:37:29.806537",
+      "stop_loss_price": null,
+      "market_value": 18360.0,
+      "pnl": -1002.7999999999992,
+      "pnl_rate": -0.05179003036750879,
+      "holding_time": 471.57503161666665
+    }
+  ],
+  "summary": {
+    "total_positions": 8,
+    "total_value": 200640.0,
+    "total_pnl": -13390.800000000001,
+    "daily_trade_pnl": 0.0,
+    "daily_trades": 0
+  }
+}

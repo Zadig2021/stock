@@ -1,0 +1,98 @@
+trading:
+  initial_capital: 270340.20
+  max_position_ratio: 1.0
+  commission_rate: 0.0003
+  stamp_tax_rate: 0.001
+  min_trade_amount: 200
+  trade_flag: false
+  advise_data_dir: "advise"
+
+risk_control:
+  stop_loss_rate: 0.02
+  take_profit_rate: 0.03
+  max_daily_loss: 0.05
+  max_single_loss: 0.05
+  position_risk_check: false
+
+monitoring:
+  scan_interval: 5
+  trading_hours_start: "09:30"
+  trading_hours_end: "15:00"
+  max_stocks_monitor: 10
+
+position:
+  initial_position_file: ths_position/ths_position_20251202.csv
+  enable_position_persistence: true
+  position_data_dir: "position_data"
+  auto_save_interval: 60
+  max_history_days: 30
+  recover_positions_on_startup: true
+
+historical_data:
+  tushare_token: "d247b4819e87e05555d896c78c41b0fd5dfd26e8bd24ebcc6103d782"
+  cache_dir: "historical_cache"
+  historical_days: 30
+  use_historical_cache: true
+  cache_expiry_days: 1  # 缓存过期天数
+
+deal_data:
+  deal_data_dir: "deal_data"
+  load_deal: true
+
+tick:
+  tick_data_dir: "tick_data"
+  tick_data_source: "realtime" # replayer 使用回放行情; realtime 使用采集行情
+  monitor_stocks: ["002466.SZ", "601899.SH", "300454.SZ", "300677.SZ", "600938.SH", "000333.SZ", "300115.SZ"]
+  collection_interval: 1 # 实时行情采集时间间隔
+  replay_speed: 10000.0 # 回放行情处理速度
+  replay_date: "20251201" # 执行回放行情日期
+
+strategy:
+  name: "T0Reversion"
+  volume_threshold: 0.25
+  price_change_threshold: 0.02
+  max_holding_time: 28800
+  min_profit_threshold: 0.005
+  signal_confidence_threshold: 0.5  # 置信度阈值
+
+strategies:
+  MeanReversion:
+    deviation_threshold: 0.12      # 调整为12%
+    lookback_period: 30            # 延长回看期
+    ma_period: 10                  # 延长均线周期
+    volume_confirmation: true
+  
+  TrendFollowing:
+    short_period: 10               # 延长短期均线
+    long_period: 30                # 延长长期均线
+    trend_threshold: 0.015         # 调整为1.5%
+    momentum_period: 14            # 标准动量周期
+  
+  Breakout:
+    period: 30                     # 延长周期
+    confirmation_bars: 3           # 增加确认K线
+    breakout_threshold: 0.015      # 调整为1.5%
+  
+  Scalping:
+    price_spread_threshold: 0.003  # 降低价差要求
+    quick_profit_target: 0.006     # 调整盈利目标
+    max_holding_period: 30         # 明确时间单位(分钟/秒)
+    stop_loss: 0.004               # 建议添加止损
+    volatility_adjusted_stop: true  # 是否启用动态止损
+
+  T0Reversion:
+    max_daily_turnover_rate: 1.0   # 每日个股最大换手比例
+    trade_lots_rate: 0.1           # 每次交易手数占总持仓比例
+    macd_fast: 12             # 反转阈值
+    macd_slow: 26             # 反转阈值
+    macd_signal: 9            # 信号线周期
+    lookback_period: 60       # 回看期
+    rsi_period: 14            # RSI周期
+    rsi_overbought: 70        # 超买阈值
+    rsi_oversold: 30          # 超卖阈值
+    bb_period: 20             # 布林带周期
+    atr_period: 14            # ATR周期
+    cci_period: 20            # CCI周期
+    mfi_period: 14            # MFI周期
+    close_position_start_time: "14:54:00"  # 平仓开始时间
+    market_close_time: "15:00:00"         # 市场关闭时间
